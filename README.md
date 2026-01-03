@@ -12,7 +12,8 @@ See demo at: https://toastui-markdown-editor.streamlit.app
 - **Theming**: Built-in support for Light and Dark themes.
 - **Customization**: Configurable height, preview style (vertical/tab), and more.
 - **Streamlit Integration**: 
-  - Integrated "Save" toolbar button to sync content back to Streamlit.
+  - Updates content back to Streamlit in real-time as you type.
+  - Includes a "Save" toolbar button as an alternative sync trigger.
   - Returns the edited markdown as a JSON object.
 
 ## Installation
@@ -93,7 +94,7 @@ The component returns a dictionary (JSON) containing the editor's state.
 }
 ```
 
-The content is updated when the user clicks the **Save** icon in the toolbar.
+The content is updated in real-time as you type, or when the user clicks the **Save** icon in the toolbar.
 
 ## Development
 

@@ -113,6 +113,14 @@ const MyComponent: FC<MyComponentProps> = ({
     }
   }, [componentKey, viewer]);
 
+  const handleOnChange = useCallback(() => {
+    if (editorRef.current) {
+      const instance = editorRef.current.getInstance();
+      const markdown = instance.getMarkdown();
+      latestSetStateValue.current("content", { markdown });
+    }
+  }, []);
+
   if (viewer) {
     return (
       <Viewer
@@ -128,6 +136,7 @@ const MyComponent: FC<MyComponentProps> = ({
       key={`editor-${componentKey}`}
       initialValue={initialValue || " "}
       ref={editorRef}
+      onChange={handleOnChange}
       {...editorProps}
     />
   );
