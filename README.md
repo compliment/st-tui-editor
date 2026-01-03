@@ -1,4 +1,4 @@
-# st-tui-editor
+# st_tui_editor
 
 A Streamlit component that integrates the powerful [Toast UI Editor](https://ui.toast.com/tui-editor), a Markdown editor that provides both Markdown and WYSIWYG editing modes.
 
@@ -20,12 +20,12 @@ See demo at: https://toastui-markdown-editor.streamlit.app
 Install via pip:
 
 ```sh
-pip install st-tui-editor
+pip install st_tui_editor
 ```
 
 ## Usage
 
-Here's a simple example of how to use `st-tui-editor` in your Streamlit app:
+Here's a simple example of how to use `st_tui_editor` in your Streamlit app:
 
 ```python
 import streamlit as st
